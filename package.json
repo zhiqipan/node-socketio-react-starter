@@ -1,0 +1,29 @@
+{
+  "name": "node-socketio-react-starter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build:dev": "cd ./client && yarn build:dev && cd ..",
+    "build:prod": "cd ./client && yarn build:prod && cd ..",
+    "build-watch": "cd ./client && yarn build:dev-watch && cd ..",
+    "start": "node ./server/server.js",
+    "start-watch": "nodemon ./server/server.js",
+    "test": "mocha ./server/**/*.test.js",
+    "test-watch": "nodemon --exec 'yarn test'"
+  },
+  "engines": {
+    "node": "10.1.0"
+  },
+  "author": "PAN Zhiqi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "moment": "^2.15.1",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.10.2"
+  }
+}
