@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build:dev": "cd ./client && yarn build:dev && cd ..",
-    "build:prod": "cd ./client && yarn build:prod && cd ..",
-    "build-watch": "cd ./client && yarn build:dev-watch && cd ..",
+    "postinstall": "cd ./client && yarn install",
+    "build:dev": "cd ./client && yarn build:dev",
+    "build:prod": "cd ./client && yarn build:prod",
+    "build-watch": "cd ./client && yarn build:dev-watch",
     "start": "node ./server/server.js",
     "start-watch": "nodemon ./server/server.js",
     "test": "mocha ./server/**/*.test.js",
